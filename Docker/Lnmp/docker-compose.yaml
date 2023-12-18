@@ -33,7 +33,7 @@ services:
     ports:
       - 6379:6379
     volumes:
-      - study-data:/data
+      - work-data:/data
 
 volumes:
   work-data:
