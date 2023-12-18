@@ -38,7 +38,7 @@ services:
       - 3306:3306
       - 33060:33060
     volumes:
-      - work-phone-data:/var/lib/mysql
+      - study-data:/var/lib/mysql
     environment:
         MYSQL_ROOT_PASSWORD: Hunter.123
     deploy:
@@ -54,7 +54,7 @@ services:
     ports:
       - 6379:6379
     volumes:
-      - work-phone-data:/data
+      - study-data:/data
     deploy:
       resources:
         reservations:
@@ -64,4 +64,4 @@ services:
               capabilities: [gpu]
 
 volumes:
-  work-phone-data:
+  study-data:
